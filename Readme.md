@@ -37,3 +37,12 @@
 ## Deployment list
 ![deployment list](./image/first-deploy.png)
 
+- git init
+- git add .
+- heroku login
+- heroku create
+- git remote add heroku <'heroku git remote path'>
+- git push heroku master
+
+
+
