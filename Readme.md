@@ -84,6 +84,21 @@
   - mongoose.connect(keys.mongoURI);
   - create folder models and user.js file
   - npm install --save cookie-session
+  - npx create-react-app client
+  - Update "scripts"
+```js
+"scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  ```
+  - npm install --save concurrently <!--SERVER-->
+  - npm install http-proxy-middleware@2.0.1<!--CLIENT-->
+
+  https://www.npmjs.com/package/axios
+  - npm install axios
   
 
 
