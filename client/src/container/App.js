@@ -1,7 +1,7 @@
 
 import React, { useReducer } from 'react';
 import Auth from './Auth';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import reducer from '../utils/reducer'
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Auth user={userInfo} activateUser={activateUser}/>
+        <Route path="/"><Auth user={userInfo} activateUser={activateUser}/></Route>
       </BrowserRouter>
     </div>
   );
