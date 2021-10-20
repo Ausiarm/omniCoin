@@ -1,6 +1,7 @@
+
 import '../App.css';
 import Auth from './Auth';
-import {BrowserRouter} from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
