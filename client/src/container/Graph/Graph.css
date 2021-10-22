@@ -1,0 +1,8 @@
+.graph {
+  width: 100vw;
+  border:3px solid blue;
+  border-radius: 3px;
+  background-color: rgba(250,250,250,1);
+  transform: scale(0.7);
+
+}
