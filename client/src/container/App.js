@@ -5,6 +5,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import reducer from '../utils/reducer';
 import CurrencySelector from './CurrencySelector';
 import Graph from './Graph/Graph';
+import Guide from './Guides/Guide';
 import CoinSelector from './CoinSelector';
 
 function App() {
@@ -80,6 +81,7 @@ function App() {
         <CurrencySelector currencies={currencies} currency={currency} handleCurrencyChange={currencyChangeHandler} />
         <CoinSelector coinList={coinList} coin={coin} handleCoinChange={coinChangeHandler}/>
         <Graph data = {bitcoinData} coin={coin} CoinPricing={getCoinPricing}/>
+        <Guide/>
       </BrowserRouter>
     </div>
   );
