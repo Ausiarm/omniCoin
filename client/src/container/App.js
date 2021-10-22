@@ -3,6 +3,12 @@ import React, { useReducer } from 'react';
 import Auth from './Auth';
 import { BrowserRouter, Route } from 'react-router-dom';
 import reducer from '../utils/reducer'
+import Navbar from '../components/Navbar';
+import './App.css';
+import { Router } from 'express';
+// import { BrowserRouter as Router } from 'react-router-dom';
+
+
 
 function App() {
 
@@ -24,11 +30,14 @@ function App() {
   }
   const userInfo = { googleId, name, email, photo };
   return (
-    <div className="App">
+    <div>
       <BrowserRouter>
         <Route path="/"><Auth user={userInfo} activateUser={activateUser}/></Route>
       </BrowserRouter>
+      <Navbar />
+
     </div>
+
   );
 }
 
