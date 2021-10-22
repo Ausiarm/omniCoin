@@ -6,7 +6,7 @@ const Navbar = () => {
       <>
         <Nav>
             <NavbarContainer>
-                <NavLogo to="/">omnisCoin</NavLogo>
+                {/* <NavLogo to="/">omnisCoin</NavLogo> */}
             </NavbarContainer>
         
         </Nav>
