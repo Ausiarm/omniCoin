@@ -58,8 +58,8 @@ function Guide() {
                 </Modal.Body>
                     <a id='guide__modal__link' href={data.link} target='blank' rel='noreferrer'>Go to site</a>
                 <Modal.Footer>
-                    <div>Technologies used:</div>
-                    <p style={{ fontsize:'0.7 rem', marginRight: 'auto'}}>{data.technologies}</p>
+                    <div>Keywords:</div>
+                    <p style={{ fontsize:'0.7 rem', marginRight: 'auto'}}>{data.keywords}</p>
                     <Button onClick={() => setModalShow(false)}>Close</Button>
                 </Modal.Footer>
             </Modal>
@@ -77,7 +77,7 @@ function Guide() {
                             link: e.link,
                             title: e.title,
                             summary: e.summary,
-                            technologies: e.technologies
+                            keywords: e.Keywords
                         })
                         setModalShow(true)
                     }}
@@ -93,7 +93,7 @@ function Guide() {
     return (
         <div className="portfolio__main__container" id="portfolio">
             <h1>Guides</h1>
-            <p>Click on images below to learn about Crypto and Stokes!
+            <p>Click on images below to learn about Crypto and Stocks!
             </p>
             <div className="container">
             <Container fluid='lg' style={{ padding: '5rem 0'}}>
