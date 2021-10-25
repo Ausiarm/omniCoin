@@ -11,8 +11,7 @@ import CoinSelector from './CoinSelector';
 import {FaBars} from 'react-icons/fa';
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavLinks, SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink} from './StyledComponents';
 import { NavItem } from 'react-bootstrap';
-
-
+import DiveDeeper from './Dive-deeper/Dive-deeper';
 
 function App() {
 
@@ -212,6 +211,7 @@ const Home = () => {
       <br></br>
       <br></br>
       <br></br>
+      <Guide/>
         <p class="paragraph" data-aos="fade-up">Start investing!</p>
         <h2  class="h2" data-aos="fade-up">Beginner Blog</h2>
         <div class="blogMenu">
@@ -337,7 +337,8 @@ const Home = () => {
   </div>
 </div>
 
-       </div>
+      </div>
+      <DiveDeeper />
      </div>
   
   );
