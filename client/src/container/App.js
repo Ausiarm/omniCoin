@@ -101,7 +101,6 @@ function App() {
       <br></br>
       <br></br>
       <br></br>
-      <h1>omnisCoin</h1>
       <MainLogo />
         <h1 class="omnisCoin">omniCoin</h1>
           <div class="btn">
