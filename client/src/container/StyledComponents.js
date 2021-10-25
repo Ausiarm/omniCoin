@@ -10,28 +10,56 @@ export const AppContainer = styled.div`
 `
 export const Heading = styled.h1`
 font-Size:28px;
-font-Family:Garamond;
-font-Color:red;
+font-Family:Poppins;
+color:#7A5D7E;
 `
-export const SelectHeading= styled.span`
+export const Li = styled.li`
 font-Size:20px;
-font-Family:'ariel'
+font-Family:Poppins;
+color:#7A5D7E;
+padding:5px;
+list-style-type: none;
+&:hover{
+  background-color:#7A5D7E;
+  color:#ECE8D9;
+  padding:5px 15px 5px 15px;
+  border-radius:3px;
+}
+`
+export const DiveBox = styled.ul`
+width:80%;
+background-color:#ECE8D9;
+padding:30px 0px 30px 0px;
+`
+
+export const SelectHeading = styled.span`
+width:100%;
+font-Size:20px;
+font-Family:'Poppins';
+color:#7A5D7E;
+margin:0 auto;
 `
 
 export const SelectContainer = styled.div `
+width:50%;
+margin: 25px auto;
+background-color: #ECE8D9;
+color:#7A5D7E;
+border-radius:3px;
 select {
-  padding: 1em;
-  border: none;
-  box-shadow: none;
-  background: transparent;
-  -webkit-appearance: none;
-  font-family: 'ariel';
-  color: #ff1769;
+  padding: 0.3em;
+  border:none;
+  border-radius:3px;
+  font-family: 'Poppins';
+  color:#ECE8D9;
+  background-color: #7A5D7E;
+  font-weight:bold;
   font-size: 1em;
-  max-width: 250px;
+  width: 250px;
+  text-align:center;
   white-space:nowrap;
   &:focus {
-      outline: none;
+      
   }
 }
 `
@@ -42,14 +70,14 @@ overflow: hidden;
 background-color: #ECE8D9;
 display: flex;
 flex-direction: row;
-height: 80px;
+height: 90px;
 justify-content: center;
 align-items: center;
 font-size: 1rem;
 width: 100%;
 top: 0;
+left:0;
 z-index: 10;
-
 @media screen and (max-width: 960px) {
   transition: 0.8s all ease;
 }
@@ -59,23 +87,16 @@ export const NavbarContainer = styled.div`
 position: fixed;
 display: flex;
 justify-content: space-between;
-height: 30px;
+height: 90px;
 z-index: 1;
 width: 100%;
-padding: 0 200px;
-max-width: 1100px; 
 `
 export const NavLogo = styled.a`
-
-display: flex;
-justify-self: flex-start
 cursor: pointer;
 font-size: 1.5rem;
-align-items: center;
-margin-left: -190px;
 font-weight: bold;
+text-align:center;
 text-decoration: none;
-position: fixed;
 color: #9A8194
 `
 
@@ -94,16 +115,14 @@ display: none;
 `
 
 export const NavMenu = styled.ul`
-position: fixed;
 flex-direction: row;
 display: flex;
+justify-content:space-around;
 align-items: center;
 list-style: none;
 text-align: center;
-margin-right: -22px;
-float: right;
 font-size: 20px;
-
+margin: 0 auto;
 @media screen and (max-width: 768px) {
   display: none;
 }
@@ -189,7 +208,6 @@ font-size: 1.5rem;
 text-decoration: none;
 list-style: none;
 transition: 0.2s ease-in-out;
-text-decoration: none;
 color: #fff;
 cursor: pointer;
 
@@ -198,6 +216,34 @@ cursor: pointer;
   transition: 0.2s ease-in-out;
 }
 `
+
+export const Name = styled.div`
+font-Size:12px;
+font-Family:Poppins;
+width:50px;
+text-align:center;
+margin:0 auto;
+color: #9A8194;
+`
+
+export const Img = styled.img`
+border-radius:50%;
+margin:5px 0;
+`
+
+export const Foot = styled.div`
+width:100%;
+padding:0;
+margin:0;
+height:150px;
+font-Size:20px;
+font-Family:Poppins;
+color:#7A5D7E;
+
+background-color:#ECE8D9;
+}
+`
+
 
 
 

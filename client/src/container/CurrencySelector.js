@@ -5,8 +5,8 @@ import { SelectContainer, SelectHeading } from './StyledComponents'
 const CurrencySelector = ({ currencies,currency, handleCurrencyChange }) => {
   
   return (
-    <SelectContainer >
-          <SelectHeading className="m-5">Select your Currency</SelectHeading>
+    <SelectContainer className="d-flex justify-content-around">
+          <SelectHeading className="m-3">Select your Currency</SelectHeading>
           <select value ={currency} onChange={(event) => handleCurrencyChange(event.target.value)}>
           {currencies.map((obj,index) => {
             //return <option key = {`${index}-${obj.country}`} value ={obj.currency}>{obj.country}</option>
