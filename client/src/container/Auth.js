@@ -29,8 +29,18 @@ export default function Auth({user,activateUser}) {
   
   return (
     <div className="m-5">
-      <a href="/auth/google"><Button className="m-5 btn-warning">Sign in with Google</Button></a>
-      <a href="/api/logout"><Button className="m-5 btn-secondary">Sign out</Button></a>
+      {/* <div className="nav">
+        <h2>omnisCoin</h2>
+      <ul id="item">
+      <li><a href="#about"><Button className="m-5 btn-secondary">About</Button></a></li>
+      <li><a href="#stocks"><Button className="m-5 btn-secondary">Stocks</Button></a></li>
+      <li><a href="#blog"><Button className="m-5 btn-secondary">Beginner Blog</Button></a></li>
+      <li><a href="#articles"><Button className="m-5 btn-secondary">Articles</Button></a></li> */}
+      {/* <li><a href="/auth/google"><Button className="m-5 btn-warning">Sign in with Google</Button></a></li>
+      <li><a href="/api/logout"><Button className="m-5 btn-secondary">Sign out</Button></a></li> */}
+      {/* </ul>
+      <i id="bar" class="fa fa-bars" aria-hidden="true"></i>
+      </div> */}
       {user.name ? <h1>Name: {user.name}</h1>:null}
       {user.name ? <h1>Email: {user.email}</h1>:null}
       {user.name ? <img src={user.photo} alt={user.name} height="100" width="100" /> : null}
