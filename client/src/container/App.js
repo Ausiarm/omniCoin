@@ -116,8 +116,7 @@ function App() {
           <br></br>
           <br></br>
           <br></br>
-            <h2 data-aos="fade-up">Welcome to omnisCoin</h2>
-            <h5 data-aos="fade-up">About</h5>
+            <h2 data-aos="fade-up">About</h2>
             <p data-aos="fade-up">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin orci augue, pretium at nisi sit amet, accumsan posuere est. 
             Nulla et malesuada tellus. Phasellus nec commodo sapien. Nulla ligula purus, egestas eget aliquet ac, condimentum at urna. 

@@ -11,7 +11,7 @@ const NavBar = () => {
          <div class="nav">
           <Nav>
             <NavbarContainer>
-              <NavLogo href="#home">omnisCoin</NavLogo>
+              <NavLogo href="#home">omniCoin</NavLogo>
                 <MobileIcon>
                   <FaBars />
                 </MobileIcon> 
