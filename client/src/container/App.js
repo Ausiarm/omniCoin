@@ -5,6 +5,7 @@ import { BrowserRouter, NavLink, Route } from 'react-router-dom';
 import reducer from '../utils/reducer';
 import CurrencySelector from './CurrencySelector';
 import Graph from './Graph/Graph';
+import Guide from './Guides/Guide';
 import CoinSelector from './CoinSelector';
 // import { Button } from 'react-bootstrap';
 import {FaBars} from 'react-icons/fa';
@@ -202,7 +203,9 @@ const Home = () => {
             <CoinSelector coinList={coinList} coin={coin} handleCoinChange={coinChangeHandler}/>
         </div>
         <Graph data = {bitcoinData} coin={coin} CoinPricing={getCoinPricing}/>
+
         </div>
+
       </BrowserRouter>
       <div id="blog" class="blog">
       <br></br>
