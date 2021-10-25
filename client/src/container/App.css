@@ -32,11 +32,6 @@ div.about h2 {
 
 }
 
-div.about h5 {
-    font-family: 'Poppins';
-    text-align: center;
-    color: #9A8194;
-}
 
 div.about p {
     padding-left: 80px;
@@ -56,5 +51,3 @@ h2.h2 {
     text-align: center;
     color: #9A8194;
 }
-
-
