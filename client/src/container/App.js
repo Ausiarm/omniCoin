@@ -7,10 +7,11 @@ import CurrencySelector from './CurrencySelector';
 import Graph from './Graph/Graph';
 import Guide from './Guides/Guide';
 import CoinSelector from './CoinSelector';
-// import { Button } from 'react-bootstrap';
-import {FaBars} from 'react-icons/fa';
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavLinks, SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink} from './StyledComponents';
-import { NavItem } from 'react-bootstrap';
+import NavBar from './Navbar/Navbar';
+import SideBar from './Sidebar/Sidebar';
+// import styled from './StyledComponents'; 
+import MainLogo from './MainLogo/MainLogo';
+
 
 
 
@@ -80,63 +81,9 @@ function App() {
     setCoin(coin)
   }
 
-  const Navbar = () => {
-    return (
-      <div>
-         <div class="nav">
-          <Nav>
-            <NavbarContainer>
-              <NavLogo><a href="#home">omnisCoin</a></NavLogo>
-                <MobileIcon>
-                  <FaBars />
-                </MobileIcon> 
-                  <NavMenu>
-                    <NavItem>
-                      <NavLinks href="#about">About</NavLinks>
-                    </NavItem>
-                    <NavItem>
-                      <NavLinks href="#stocks">Stocks</NavLinks>
-                    </NavItem>
-                    <NavItem>
-                      <NavLinks href="#blog">Beginner Blog</NavLinks>
-                    </NavItem>
-                    <NavItem>
-                      <NavLinks href="#articles">Articles</NavLinks>
-                    </NavItem>
-                    <NavItem>
-                      <NavLinks href="/auth/google">Sign in with Google</NavLinks>
-                    </NavItem>
-                    <NavItem>
-                      <NavLinks href="/api/logout">Sign out</NavLinks>
-                    </NavItem>
-                </NavMenu>
-            </NavbarContainer>
-          </Nav>
-        </div>
-      </div>
-    )
-  }
 
 
-const SideBar = () => {
-  return (
-    <SidebarContainer>
-      <Icon>
-        <CloseIcon/>
-      </Icon>
-      <SidebarWrapper>
-        <SidebarMenu>
-          <SidebarLink href="#about">About</SidebarLink>
-          <SidebarLink href="#stocks">Stocks</SidebarLink>
-          <SidebarLink href="#blog">Blog</SidebarLink>
-          <SidebarLink href="#articles">Articles</SidebarLink>
-          <SidebarLink href="#/auth/google">Sign in with Google</SidebarLink>
-          <SidebarLink href="#/api/logout">Sign out</SidebarLink>
-        </SidebarMenu>
-      </SidebarWrapper>
-    </SidebarContainer>
-  )
-}
+
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -145,21 +92,13 @@ const Home = () => {
   };
 }
 
-  const MainLogo = () => {
-    <div class="circle">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  }
   
   return (
     <div className="App">
       
       <BrowserRouter>
       <SideBar />
-      <Navbar />
+      <NavBar />
       <Auth user={userInfo} activateUser={activateUser} />
       <div id="home" class="mid">
       <br></br>
@@ -167,6 +106,7 @@ const Home = () => {
       <br></br>
       <br></br>
       <br></br>
+      <MainLogo />
         <h1>omnisCoin</h1>
           <div class="btn">
               <a class="simple" href="#stocks">Get started with Crypto Stocks</a>
@@ -207,13 +147,13 @@ const Home = () => {
         </div>
 
       </BrowserRouter>
-      <div id="blog" class="blog">
+      <div id="guides" class="guides">
       <br></br>
       <br></br>
       <br></br>
       <br></br>
         <p class="paragraph" data-aos="fade-up">Start investing!</p>
-        <h2  class="h2" data-aos="fade-up">Beginner Blog</h2>
+        <h2  class="h2" data-aos="fade-up">Guides</h2>
         <div class="blogMenu">
           <div class="blog1" data-aos="fade-up">
             <div class="image">
@@ -266,13 +206,13 @@ const Home = () => {
        <br></br>
        <br></br>
 
-       <div id="articles" class="articles">
+       <div id="divedeeper" class="divedeeper">
        <div class="card-columns">
        <br></br>
        <br></br>
        <br></br>
        <br></br>
-         <h1>Articles</h1>
+         <h1>Dive Deeper</h1>
   <div class="card">
     <img class="card-img-top" src="#" alt="Card image cap"></img>
     <div class="card-body">
