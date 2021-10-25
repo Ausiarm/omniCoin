@@ -212,6 +212,7 @@ const Home = () => {
       <br></br>
       <br></br>
       <br></br>
+      <Guide/>
         <p class="paragraph" data-aos="fade-up">Start investing!</p>
         <h2  class="h2" data-aos="fade-up">Beginner Blog</h2>
         <div class="blogMenu">
