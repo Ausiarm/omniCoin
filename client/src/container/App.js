@@ -12,7 +12,6 @@ import CoinSelector from './CoinSelector';
 
 
 import DiveDeeper from './Dive-deeper/Dive-deeper';
-=======
 import NavBar from './Navbar/Navbar';
 import SideBar from './Sidebar/Sidebar';
 // import styled from './StyledComponents'; 
