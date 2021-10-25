@@ -1,23 +1,29 @@
 .graph {
-  width: 100vw;
   border:50px solid #ECE8D9;
   border-radius: 3px;
   background-color: rgb(210, 205, 211);
-  transform: scale(0.7);
+  transform: scale(1);
 
 }
 
-button.m-5 {
+button.button {
   display: flex;
+
   text-align: center;
   display: flex;
   justify-content: center;
   margin: 5px;
   padding: auto;
+  font-weight: bold;
+  background-color: #7A5D7E;
+  border-color: transparent;
+  color: #ECE8D9;
+  align-items: center;
+}
+button.button:hover {
+  color: #7A5D7E;
   background-color: #ECE8D9;
   border-color: transparent;
-  color: #9A8194;
-  align-items: center;
 }
 
 div.container {

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Graph.css';
 import { Button } from 'react-bootstrap';
-import { Doughnut,Line,Bar,Scatter,Bubble,Pie,PolarArea,Radar } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 
 const Graph = ({data,coin, CoinPricing}) => {
 
@@ -15,12 +15,12 @@ const Graph = ({data,coin, CoinPricing}) => {
           fill: false,
 				lineTension: 0.1,
 				backgroundColor: '#fff',
-				borderColor: 'rgba(75,192,192,1)',
+				borderColor: '#7A5D7E',
 				borderCapStyle: 'butt',
 				borderDash: [],
 				borderDashOffset: 0.0,
 				borderJoinStyle: 'miter',
-				pointBorderColor: 'rgba(75,192,192,1)',
+				pointBorderColor: '#7A5D7E',
 				pointBackgroundColor: '#fff',
 				pointBorderWidth: 1,
 				pointHoverRadius: 5,
@@ -38,9 +38,9 @@ const Graph = ({data,coin, CoinPricing}) => {
   return (
 	<div>
     <div className="container" >
-      <Button className="m-5" onClick={CoinPricing}>Go</Button>
+      <Button className="m-1 px-5 py-3 button" onClick={CoinPricing}>View</Button>
 	</div>
-	<div className="graphContainer">
+	<div className="graphContainer m-3">
       <Line  className="w-75 m-auto graph" data = {formatChartData()} height ={250} />
              
     </div>

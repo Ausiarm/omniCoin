@@ -1,6 +1,7 @@
 import React from 'react'
 import CustomModal from '../CustomModal/CustomModal'
 import { Button } from 'react-bootstrap'
+import { Heading , Li, DiveBox} from '../StyledComponents';
 
 export default function DiveDeeper() {
 
@@ -42,15 +43,14 @@ Bitcoin Red Pill</a></Button>
   
   return (
     <div>
-      <h1>Dive Deeper</h1>
-      <ul>
-        <li><CustomModal content={videoContent} itemName='Videos' /></li>
-        <li><CustomModal content={moviesContent} itemName='Movies' /></li>
-        <li><CustomModal content={booksContent} itemName='Books'/></li>
-        <li><CustomModal itemName='Podcast' /></li>
-        <li><CustomModal itemName='Humor'/></li>
-      </ul>
-      
+      <Heading className="m-5 text-center">Dive Deeper</Heading>
+      <DiveBox className="d-flex m-auto justify-content-around">
+        <Li ><CustomModal content={videoContent} itemName='Videos' /></Li>
+        <Li ><CustomModal content={moviesContent} itemName='Movies' /></Li>
+        <Li ><CustomModal content={booksContent} itemName='Books'/></Li>
+        <Li ><CustomModal itemName='Podcast' /></Li>
+        <Li ><CustomModal itemName='Humor'/></Li>
+      </DiveBox>
     </div>
   )
 }
