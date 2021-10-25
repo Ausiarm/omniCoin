@@ -11,6 +11,7 @@ import NavBar from './Navbar/Navbar';
 import SideBar from './Sidebar/Sidebar';
 // import styled from './StyledComponents'; 
 import MainLogo from './MainLogo/MainLogo';
+import './App.css';
 
 
 
@@ -107,10 +108,10 @@ const Home = () => {
       <br></br>
       <br></br>
       <MainLogo />
-        <h1>omnisCoin</h1>
+        <h1 class="omnisCoin">omniCoin</h1>
           <div class="btn">
-              <a class="simple" href="#stocks">Get started with Crypto Stocks</a>
-              <a class="border" href="#blog">Learn more about Crypto</a>
+              <a class="btn btn-primary" href="#stocks">Get started with Crypto Stocks</a>
+              <a class="btn btn-primary" href="#blog">Learn more about Crypto</a>
           </div>
       </div>
         <Route path="/"></Route>
@@ -275,7 +276,7 @@ const Home = () => {
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
-</div>
+ </div>
 
        </div>
      </div>
