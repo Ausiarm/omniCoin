@@ -135,9 +135,8 @@ function App() {
 				<div id='about' className='info mb-5'>
 					<div className='about'>
 						<h2 data-aos='fade-up'>
-							Welcome to omnisCoin
+							About
 						</h2>
-						<h5 data-aos='fade-up'>About</h5>
 						<p data-aos='fade-up'>
 							Lorem ipsum dolor sit amet,
 							consectetur adipiscing elit.
