@@ -7,6 +7,12 @@ import CurrencySelector from './CurrencySelector';
 import Graph from './Graph/Graph';
 import Guide from './Guides/Guide';
 import CoinSelector from './CoinSelector';
+
+// import { Button } from 'react-bootstrap';
+
+
+import DiveDeeper from './Dive-deeper/Dive-deeper';
+=======
 import NavBar from './Navbar/Navbar';
 import SideBar from './Sidebar/Sidebar';
 // import styled from './StyledComponents'; 
@@ -144,6 +150,8 @@ function App() {
       <br></br>
       <br></br>
 
+  
+ 
 <Guide/>
       
 
@@ -222,7 +230,8 @@ function App() {
   </div>
 </div>
 
-       </div>
+      </div>
+      <DiveDeeper />
      </div>
      </div>
   
