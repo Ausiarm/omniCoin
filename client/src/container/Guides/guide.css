@@ -3,6 +3,7 @@
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 25px;
+    flex-direction: row;
     
 }
 
@@ -12,16 +13,15 @@
     align-content: center;
     display: flex;
     flex-direction: row;
-}
-
+} */
+/* 
 div.polaroid {
     width: 20%;
     flex-direction: row;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
-    align-content: center;
-    
+
+
   } */
 
 
@@ -84,5 +84,18 @@ div.polaroid {
         flex-direction: column;
         align-items: center;
     }
+}
+
+.portfolio__main__container h1 {
+    text-align: center;
+    font-family: 'Poppins';
+    color: #9A8194;
+}
+
+p {
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+    font-size: 18px;
 }
 

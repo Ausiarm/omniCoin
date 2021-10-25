@@ -41,6 +41,7 @@ const NavBar = ({ user, activateUser }) => {
           <Nav>
             <NavbarContainer className="col-12">
               <NavLogo className="col-3 m-auto " href="#home"><img src={logo} alt="Logo" height="35" width="35"/> omniCoin</NavLogo>
+
                 <MobileIcon>
                   <FaBars />
                 </MobileIcon> 
