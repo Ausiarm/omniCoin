@@ -36,11 +36,15 @@ const Graph = ({data,coin, CoinPricing}) => {
 	}
     
   return (
-    <div  >
+	<div>
+    <div className="container" >
       <Button className="m-5" onClick={CoinPricing}>Go</Button>
+	</div>
+	<div className="graphContainer">
       <Line  className="w-75 m-auto graph" data = {formatChartData()} height ={250} />
              
     </div>
+	</div>
   )
 }
 
