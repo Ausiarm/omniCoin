@@ -196,9 +196,6 @@ cursor: pointer;
   transition: 0.2s ease-in-out;
 }
 `
-export const MainLogo = styled.div`
-margin: 0;
-padding: 
-`
+
 
 
