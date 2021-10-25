@@ -7,11 +7,18 @@ import CurrencySelector from './CurrencySelector';
 import Graph from './Graph/Graph';
 import Guide from './Guides/Guide';
 import CoinSelector from './CoinSelector';
+
+// import { Button } from 'react-bootstrap';
+
+
+import DiveDeeper from './Dive-deeper/Dive-deeper';
+=======
 import NavBar from './Navbar/Navbar';
 import SideBar from './Sidebar/Sidebar';
 // import styled from './StyledComponents'; 
 import MainLogo from './MainLogo/MainLogo';
 import './App.css';
+
 
 
 
@@ -82,17 +89,6 @@ function App() {
     setCoin(coin)
   }
 
-
-
-
-
-const Home = () => {
-  const [isOpen, setIsOpen] = useState(false)
-  const toggle = () => {
-    setIsOpen(!isOpen)
-  };
-}
-
   
   return (
     <div className="App">
@@ -107,11 +103,16 @@ const Home = () => {
       <br></br>
       <br></br>
       <br></br>
+      <h1>omnisCoin</h1>
       <MainLogo />
+
         <h1 class="omnisCoin">omniCoin</h1>
           <div class="btn">
               <a class="btn btn-primary" href="#stocks">Get started with Crypto Stocks</a>
               <a class="btn btn-primary" href="#blog">Learn more about Crypto</a>
+
+
+
           </div>
       </div>
         <Route path="/"></Route>
@@ -139,7 +140,7 @@ const Home = () => {
         <br></br>
         <br></br>
         <h2>Crypto Stocks</h2>
-          <div class="selector">
+          <div class="border" class="selector">
             <CurrencySelector currencies={currencies} currency={currency} handleCurrencyChange={currencyChangeHandler} />
             <CoinSelector coinList={coinList} coin={coin} handleCoinChange={coinChangeHandler}/>
         </div>
@@ -153,56 +154,12 @@ const Home = () => {
       <br></br>
       <br></br>
       <br></br>
-        <p class="paragraph" data-aos="fade-up">Start investing!</p>
-        <h2  class="h2" data-aos="fade-up">Guides</h2>
-        <div class="blogMenu">
-          <div class="blog1" data-aos="fade-up">
-            <div class="image">
-              <img src=""></img>
-            </div>
-            <div class="blogDetails">
-              <div class="name">
-                <div class="nameDetails">
-                  <h4>What is crypto?</h4>
-                  <p>Article by - <span></span></p>
 
-  {/* <div class="card-deck">
-  <div class="card">
-    <img class="card-img-top" src="#" alt="Card image cap"></img>
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+  
+ 
+<Guide/>
+      
 
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="#" alt="Card image cap"></img>
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="#" alt="Card image cap"></img>
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-
-    </div>
-  </div>
-</div> */}
-                </div>
-                <div class="pro">
-                  <p>Lorem ipsum dolor sit amet, <br></br>consectetur adipiscing</p>
-                  
-                  <a href="#" class="btn btn-primary">Read more</a>
-                </div>
-              </div>
-             </div>
-           </div>
-         </div>
-       </div>
        <br></br>
        <br></br>
        <br></br>
@@ -278,7 +235,9 @@ const Home = () => {
   </div>
  </div>
 
-       </div>
+      </div>
+      <DiveDeeper />
+     </div>
      </div>
   
   );
