@@ -1,9 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink} from './../StyledComponents';
 
 
 
+
 const SideBar = () => {
+
+const Home = () => {
+    const [isOpen, setIsOpen] = useState(false)
+    const toggle = () => {
+      setIsOpen(!isOpen)
+    };
+  }
+  
     return (
       <SidebarContainer>
         <Icon>
