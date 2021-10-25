@@ -16,6 +16,7 @@ import NavBar from './Navbar/Navbar';
 import SideBar from './Sidebar/Sidebar';
 // import styled from './StyledComponents'; 
 import MainLogo from './MainLogo/MainLogo';
+import './App.css';
 
 
 
@@ -104,9 +105,13 @@ function App() {
       <h1>omnisCoin</h1>
       <MainLogo />
 
+        <h1 class="omnisCoin">omniCoin</h1>
           <div class="btn">
-              <a class="simple" href="#stocks">Get started with Crypto Stocks</a>
-              <a class="border" href="#guides">Learn more about Crypto</a>
+              <a class="btn btn-primary" href="#stocks">Get started with Crypto Stocks</a>
+              <a class="btn btn-primary" href="#blog">Learn more about Crypto</a>
+
+
+
           </div>
       </div>
         <Route path="/"></Route>
@@ -227,7 +232,7 @@ function App() {
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
-</div>
+ </div>
 
       </div>
       <DiveDeeper />

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+h1.omnisCoin {
+    font-family: 'Poppins';
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    font-size: 50px;
+    padding-top: 40px;
+    color: #9A8194;
+}
+
+div.btn {
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+a.btn.btn-primary {
+    margin: 5px;
+    padding: auto;
+    background-color: #ECE8D9;
+    border-color: transparent;
+    color: #9A8194;
+}
+
+div.about h2 {
+    text-align: center;
+    font-family: 'Poppins';
+    color: #9A8194;
+
+}
+
+div.about h5 {
+    font-family: 'Poppins';
+    text-align: center;
+    color: #9A8194;
+}
+
+div.about p {
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+    font-size: 18px;
+}
+
+div.stocks h2 {
+    font-family: 'Poppins';
+    text-align: center;
+    color: #9A8194;
+}
+
+h2.h2 {
+    font-family: 'Poppins';
+    text-align: center;
+    color: #9A8194;
+}
+
+
