@@ -1,0 +1,88 @@
+/* guide-image {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    
+}
+
+.portfolio__main__container {
+    text-align: center;
+    padding: 10px 20px;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+div.polaroid {
+    width: 20%;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    align-content: center;
+    
+  } */
+
+
+.portfoliomaincontainer h1,
+.portfoliomaincontainer p {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#portfoliocardcontainer {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.portfolioimage:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+.portfolioclickinfo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--font-color);
+    display: none;
+}
+
+.portfolioimage:hover + .portfolioclickinfo {
+    display: block;
+}
+
+.modal-backdrop.show {
+    opacity: 1 !important;
+}
+
+#portfoliomodallink {
+    padding: 0 0 1rem 1rem
+}
+
+#portfoliomodallink:link {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px){
+    .guide__card__container {
+        width: 100%;
+        padding: 0.5rem 2.5rem;
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

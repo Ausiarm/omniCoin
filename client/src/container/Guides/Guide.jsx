@@ -27,6 +27,30 @@ function Guide() {
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
+                        {/* <p class="paragraph" data-aos="fade-up">Start investing!</p>
+                <h2  class="h2" data-aos="fade-up">Guides</h2> */}
+                {/* <div class="blogMenu">
+                <div class="blog1" data-aos="fade-up">
+                    <div class="image">
+                    <img src=""></img>
+                    </div>
+                    <div class="blogDetails">
+                    <div class="name">
+                        <div class="nameDetails">
+                        <h4>What is crypto?</h4>
+                        <p>Article by - <span></span></p>
+                        </div>
+                        <div class="pro">
+                        <p>Lorem ipsum dolor sit amet, <br></br>consectetur adipiscing</p>
+                        
+                        <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>  */}
+
                     <p>{data.summary}</p>
                     <Image src={data.image} style={{width:'200px'}}/>
                 </Modal.Body>
@@ -42,7 +66,8 @@ function Guide() {
 
     const mapped = guideData.map((e, idx) => {
         return (
-            <Card key={idx} id='guide__card__container'>
+
+<Card className="col-5 m-5" key={idx} id='guide__card__container'>
                 <Image className='guide__image'
                     onClick={() => {
                         setTempData({
@@ -59,17 +84,23 @@ function Guide() {
                     {createModal(tempData)}
             </Card>
             
+            
         )
     })
 
     return (
         <div className="portfolio__main__container" id="portfolio">
             <h1>Guides</h1>
-            <Container fluid='lg' style={{ padding: '2rem 0'}}>
-                <Row>
+            <div className="container">
+            <Container fluid='lg' style={{ padding: '5rem 0'}}>
+            <div className="polaroid">
+                <Row className="col-12 d-flex-wrap p-2"> 
                     {mapped}
                 </Row>
+
+                </div>
             </Container>
+            </div>
         </div>
     )
 }

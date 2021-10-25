@@ -36,17 +36,16 @@ select {
 }
 `
 
-export const Nav = styled.nav`
-overflow: hidden;
-background-color: #333;
+export const Nav = styled.div`
 position: fixed;
+overflow: hidden;
+background-color: #ECE8D9;
 display: flex;
 flex-direction: row;
 height: 80px;
 justify-content: center;
 align-items: center;
 font-size: 1rem;
-position: sticky;
 width: 100%;
 top: 0;
 z-index: 10;
@@ -57,6 +56,7 @@ z-index: 10;
 `
 
 export const NavbarContainer = styled.div`
+position: fixed;
 display: flex;
 justify-content: space-between;
 height: 30px;
@@ -66,16 +66,17 @@ padding: 0 200px;
 max-width: 1100px; 
 `
 export const NavLogo = styled.a`
+
 display: flex;
 justify-self: flex-start
 cursor: pointer;
-font-size: 1.5rem
+font-size: 1.5rem;
 align-items: center;
-margin-left: -150px;
+margin-left: -190px;
 font-weight: bold;
 text-decoration: none;
 position: fixed;
-color: #7A5D7E
+color: #9A8194
 `
 
 export const MobileIcon = styled.div`
@@ -101,6 +102,7 @@ list-style: none;
 text-align: center;
 margin-right: -22px;
 float: right;
+font-size: 20px;
 
 @media screen and (max-width: 768px) {
   display: none;
