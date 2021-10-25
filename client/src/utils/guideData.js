@@ -22,6 +22,27 @@ const guideData = [
         summary: 'My first ever application!',
         technologies: 'HTML | CSS'
     },
+    {
+        image: bitCoin,
+        link: 'https://armstrongal.netlify.app/',
+        title: '1st Portfolio',
+        summary: 'My first ever application!',
+        technologies: 'HTML | CSS'
+    },
+    {
+        image: bitCoin,
+        link: 'https://armstrongal.netlify.app/',
+        title: '1st Portfolio',
+        summary: 'My first ever application!',
+        technologies: 'HTML | CSS'
+    },
+    {
+        image: bitCoin,
+        link: 'https://armstrongal.netlify.app/',
+        title: '1st Portfolio',
+        summary: 'My first ever application!',
+        technologies: 'HTML | CSS'
+    },
 ]
 
 export default guideData;

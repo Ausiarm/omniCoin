@@ -95,22 +95,23 @@ function App() {
       <SideBar />
       <NavBar />
       <Auth user={userInfo} activateUser={activateUser} />
-      <div id="home" class="mid">
       <br></br>
       <br></br>
       <br></br>
       <br></br>
       <br></br>
+      <br></br>
+      <div id="home" class="mid" >
       <MainLogo />
         <h1 class="omnisCoin">omniCoin</h1>
           <div class="btn">
               <a class="btn btn-primary" href="#stocks">Get started with Crypto Stocks</a>
-              <a class="btn btn-primary" href="#blog">Learn more about Crypto</a>
+              <a class="btn btn-primary" href="#guides">Learn more about Crypto</a>
           </div>
       </div>
         <Route path="/"></Route>
 
-        <div id="about" class="info">
+        <div id="about" class="info" class="mt-5">
           <div class="about">
           <br></br>
           <br></br>

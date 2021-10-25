@@ -93,6 +93,8 @@ function Guide() {
     return (
         <div className="portfolio__main__container" id="portfolio">
             <h1>Guides</h1>
+            <p>Click on images below to learn about Crypto and Stokes!
+            </p>
             <div className="container">
             <Container fluid='lg' style={{ padding: '5rem 0'}}>
             <div className="polaroid">
