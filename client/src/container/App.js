@@ -17,10 +17,6 @@ import SideBar from './Sidebar/Sidebar';
 // import styled from './StyledComponents'; 
 import MainLogo from './MainLogo/MainLogo';
 import './App.css';
-<<<<<<< HEAD
-=======
-
->>>>>>> 2df253f4d4c79abc758811139f5f33543b63121d
 
 
 
@@ -107,20 +103,10 @@ function App() {
       <br></br>
       <h1>omnisCoin</h1>
       <MainLogo />
-<<<<<<< HEAD
-=======
-
->>>>>>> 2df253f4d4c79abc758811139f5f33543b63121d
         <h1 class="omnisCoin">omniCoin</h1>
           <div class="btn">
               <a class="btn btn-primary" href="#stocks">Get started with Crypto Stocks</a>
               <a class="btn btn-primary" href="#blog">Learn more about Crypto</a>
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> 2df253f4d4c79abc758811139f5f33543b63121d
           </div>
       </div>
         <Route path="/"></Route>
