@@ -12,6 +12,8 @@ function Guide() {
     const [modalShow, setModalShow] = useState(false);
     const [tempData, setTempData] = useState({})
 
+    // "string"
+
     function createModal(data){
         return(
             <Modal
