@@ -2,6 +2,7 @@ import React from 'react';
 import './Graph.css';
 import { Button } from 'react-bootstrap';
 import { Line } from 'react-chartjs-2';
+import { GraphContainer } from '../StyledComponents';
 
 const Graph = ({ data, coin, CoinPricing }) => {
 
@@ -40,14 +41,12 @@ const Graph = ({ data, coin, CoinPricing }) => {
 	}
     
   return (
-	<div>
-    <div className="container" >
-      <Button className="m-1 px-5 py-3 button" onClick={CoinPricing}>View</Button>
-	</div>
-	<div className="graphContainer m-3">
-      <Line  className="w-75 m-auto graph" data = {formatChartData()} height ={250} />
-             
-    </div>
+	  <div>
+      <Button className="m-auto mt-3 px-5 py-3 button text-center" onClick={CoinPricing}>View</Button>
+	    <GraphContainer className="graphContainer m-auto mt-3">
+        <Line  data = {formatChartData()} maxHeight ={250} />
+			</GraphContainer>
+			<div id="guides"></div>
 	</div>
   )
 }

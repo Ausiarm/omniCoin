@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
-h1.omnisCoin {
-    font-family: 'Poppins';
-    text-align: center;
-    margin: auto;
-    padding: auto;
-    font-size: 50px;
-    padding-top: 40px;
-    color: #9A8194;
-}
-
 div.btn {
     align-items: center;
     display: flex;

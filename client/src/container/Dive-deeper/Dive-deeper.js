@@ -6,7 +6,7 @@ import {videosContent, moviesContent,booksContent,podcastsContent,humorContent} 
 export default function DiveDeeper() {
   
   return (
-    <div>
+    <div id="divedeeper">
       <Heading className="m-5 text-center">Dive Deeper</Heading>
       <DiveBox className="d-flex m-auto justify-content-around">
         <Li ><CustomModal content={videosContent} itemName='Videos' /></Li>

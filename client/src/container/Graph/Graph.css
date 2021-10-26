@@ -1,14 +1,6 @@
-.graph {
-  border:50px solid #ECE8D9;
-  border-radius: 3px;
-  background-color: rgb(210, 205, 211);
-  transform: scale(1);
-
-}
 
 button.button {
   display: flex;
-
   text-align: center;
   display: flex;
   justify-content: center;
@@ -24,11 +16,6 @@ button.button:hover {
   color: #7A5D7E;
   background-color: #ECE8D9;
   border-color: transparent;
-}
-
-div.container {
-  display:flex;
-  justify-content: center;
 }
 
 
