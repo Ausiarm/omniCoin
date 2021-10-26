@@ -36,7 +36,7 @@ function App() {
 		useState(defaultCurrency);
 	const [bitcoinData, setBitcoinData] = useState({});
 	const [currencies, setCurrencies] = useState([]);
-	const [coin, setCoin] = useState('bitclave');
+	const [coin, setCoin] = useState('bitcoin');
 	const [coinList, setCoinList] = useState([]);
 
 	function activateUser(data) {
@@ -47,25 +47,25 @@ function App() {
 	}
 
 	function newDate(date) {
-		return new Date(date).toLocaleDateString('es-ES', {
-			year: 'numeric',
-			month: 'numeric',
+		return new Date(date).toLocaleString('fr-CA', {
+			year:'numeric',
+      month: 'numeric',
 			day: 'numeric',
 		});
 	}
 	const userInfo = { googleId, name, email, photo };
+
+	//Fetching currency list
 	function getCurrencies() {
-		//currency list
-		fetch(
-			'https://api.coingecko.com/api/v3/simple/supported_vs_currencies'
-		)
+		fetch('https://api.coingecko.com/api/v3/simple/supported_vs_currencies')
 			.then((res) => res.json())
 			.then((res) => {
 				setCurrencies(res);
 			});
 	}
+
+		//Fetching coin list
 	function getCoinList() {
-		//coin list
 		fetch('https://api.coingecko.com/api/v3/coins/list')
 			.then((res) => res.json())
 			.then((res) => {
@@ -73,25 +73,19 @@ function App() {
 			});
 	}
 
+  //Fetching 30 days coin Pricing
 	function getCoinPricing() {
 		const today = +new Date();
-		//coin Pricing
 		fetch(
-			`https://api.coingecko.com/api/v3/coins/${coin}/market_chart/range?vs_currency=${currency}&from=1613774400&to=${today}`
+			`https://api.coingecko.com/api/v3/coins/${coin}/market_chart/range?vs_currency=${currency}&from=1632774400&to=${today}`
 		)
 			.then((res) => res.json())
 			.then((res) => {
-				setBitcoinData(
+        setBitcoinData(
 					res.prices.sort().map((el) => {
 						return [newDate(el[0]), el[1]];
 					})
 				);
-				console.log(
-					res.prices.sort().map((el) => {
-						return [newDate(el[0]), el[1]];
-					})
-				);
-				//console.log(res.prices);
 			});
 	}
 
