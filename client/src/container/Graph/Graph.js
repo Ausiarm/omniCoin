@@ -3,12 +3,16 @@ import './Graph.css';
 import { Button } from 'react-bootstrap';
 import { Line } from 'react-chartjs-2';
 
-const Graph = ({data,coin, CoinPricing}) => {
+const Graph = ({ data, coin, CoinPricing }) => {
 
 	function formatChartData() {
 		
+		let arr = []
+		if (data.length > 0) {arr = data.map((el)=>  el[0])}
+		
+		console.log(data);
     	return {
-			labels: Object.keys(data),
+			labels: arr.sort(),
 			datasets: [
 				{
 				label: coin,

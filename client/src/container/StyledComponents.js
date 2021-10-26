@@ -11,7 +11,7 @@ export const AppContainer = styled.div`
 export const Heading = styled.h1`
 font-Size:28px;
 font-Family:Poppins;
-color:#7A5D7E;
+color:#9A8194;
 `
 export const Li = styled.li`
 font-Size:20px;
@@ -25,9 +25,22 @@ list-style-type: none;
   padding:5px 15px 5px 15px;
   border-radius:3px;
 }
+a{text-decoration:none;
+color:#7A5D7E;
+&:hover{
+  background-color:#7A5D7E;
+  color:#ECE8D9;
+
+}
 `
 export const DiveBox = styled.ul`
 width:80%;
+background-color:#ECE8D9;
+padding:30px 0px 30px 0px;
+`
+export const DiveBoxModal = styled.ul`
+width:100%;
+border-radius:5px;
 background-color:#ECE8D9;
 padding:30px 0px 30px 0px;
 `
