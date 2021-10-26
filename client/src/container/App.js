@@ -3,9 +3,6 @@ import React, {
 	useState,
 	useEffect,
 } from 'react';
-import {
-	BrowserRouter,
-} from 'react-router-dom';
 import reducer from '../utils/reducer';
 import CurrencySelector from './CurrencySelector';
 import Graph from './Graph/Graph';
@@ -17,6 +14,9 @@ import SideBar from './Sidebar/Sidebar';
 import MainLogo from './MainLogo/MainLogo';
 import './App.css';
 import Footer from '../Footer/Footer';
+import About from './About/about';
+import {Heading} from './StyledComponents';
+import Head from './Head/Head';
 
 function App() {
 	const initialState = {
@@ -103,73 +103,30 @@ function App() {
 
 	return (
 		<div>
-			<BrowserRouter>
-				<SideBar />
-				<NavBar user={userInfo}
-					activateUser={activateUser}/>
-				
-				<div id='home' className='mid'>
-					<MainLogo className="mt-5"/>
-					<h1 className='omnisCoin'>omniCoin</h1>
-					<div className='btn'>
-						<a
-							className='btn btn-primary'
-							href='#stocks'
-						>
-							Get started with Crypto Stocks
-						</a>
-						<a
-							className='btn btn-primary'
-							href='#blog'
-						>
-							Learn more about Crypto
-						</a>
-					</div>
-				</div>
-				<div id='about' className='info mb-5'>
-					<div className='about'>
-						<h2 data-aos='fade-up'>
-							About
-						</h2>
-						<p data-aos='fade-up'>
-							If you're here then you've probably hit the point where cryptocurrency and the talk surrounding it has pushed you to the point where you simply can't ignore it anymore. Don't worry, we've all been there and know how frustrating it can be to feel completely out of the loop in relation to a technology that it seems everyone and their mother won't stop talking about.
-						</p>
-            <p>
-              The solution to this global gossip? omniCoin. We set out with a basic idea in mind: create a repository of knowledge for beginners and novices in the crypto space. Want to learn what a "cold wallet" is? We got your back. Want to have a better understanding of how cryptocurrencies prices fluctuate in a given period of time? Not only do we have your back, we also got you a nice little graph that makes understanding these things much easier. 
-            </p>
-            <p>
-              Our name, omniCoin, literally translates to everyone's coin and that's how we want to operate moving forward. No one should be left behind as tech advances and we will do our best to make sure the Australian people remain in the know about this rapidly evolving industry. 
-            </p>
-					</div>
-				</div>
-				<div id='stocks' className='stocks mb-5'>
-					<h2>Crypto Stocks</h2>
-					<div className='my-5' >
-						<CurrencySelector 
-							currencies={currencies}
-							currency={currency}
-							handleCurrencyChange={
-								currencyChangeHandler
-							}
-						/>
-						<CoinSelector
-							coinList={coinList}
-							coin={coin}
-							handleCoinChange={
-								coinChangeHandler
-							}
-						/>
-					</div>
-					<Graph
-						data={bitcoinData}
-						coin={coin}
-						CoinPricing={getCoinPricing}
-					/>
-				</div>
-			</BrowserRouter>
-			<div id='guides' className='guides mb-5'>
+			<SideBar />
+			<NavBar user={userInfo}	activateUser={activateUser}/>
+			<MainLogo className="mt-5"/>
+			<Head/>
+			<About/>
+			<Heading>Crypto Stocks</Heading>
+			<CurrencySelector
+				currencies={currencies}
+				currency={currency}
+				handleCurrencyChange={currencyChangeHandler}
+			/>
+			<CoinSelector
+				coinList={coinList}
+				coin={coin}
+				handleCoinChange={coinChangeHandler}
+			/>
+			<Graph
+				data={bitcoinData}
+				coin={coin}
+				CoinPricing={getCoinPricing}
+			/>
+			{/* <div id='guides' className='guides mb-5'> */}
 				<Guide className='mb-5' />
-      </div>
+      {/* </div> */}
       	<DiveDeeper />
         <Footer/>
 		</div>

@@ -69,6 +69,12 @@ div.polaroid {
 #portfoliomodallink:link {
     text-decoration: none;
 }
+.guide__image{
+    margin: auto;
+    padding:10px;
+    width: 200px;
+    height: 200px;
+}
 
 @media only screen and (max-width: 600px){
     .guide__card__container {

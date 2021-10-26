@@ -1,17 +1,22 @@
 import styled from 'styled-components'
 import {FaTimes} from 'react-icons/fa'
 
-export const AppContainer = styled.div`
-    max-width: 800px;
-    margin:0 auto;
-    text-align:center;
-    background-color:beige;
-    border: 3px solid red;
-`
-export const Heading = styled.h1`
-font-Size:28px;
+
+export const Heading = styled.h2`
+margin-top:100px;
+text-align:center;
 font-Family:Poppins;
 color:#9A8194;
+`
+
+export const OmniCoin = styled.div`
+ font-family: 'Poppins';
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    font-size: 50px;
+    margin-top: 100px;
+    color: #9A8194;
 `
 export const Li = styled.li`
 font-Size:20px;
@@ -258,5 +263,27 @@ background-color:#ECE8D9;
 `
 
 
+export const GraphContainer = styled.div`
+  width: 75%;
+  border:50px solid #ECE8D9;
+  border-radius: 3px;
+  background-color: rgb(210, 205, 211);
 
+@media screen and (max-width: 480px) {
+  width: 90%;
+  border:5px solid #ECE8D9;
+  
+}
+`
+
+export const Text = styled.h5`
+color: #7A5D7E;
+text-align: center;
+`
+
+export const Container = styled.div`
+width:90%;
+margin: 0 auto;
+background-color:#ECE8D9;
+`
 
