@@ -14,7 +14,7 @@ export default function Head() {
 						</a>
 						<a
 							className='btn btn-primary'
-							href='#blog'
+							href='#guides'
 						>
 							Learn more about Crypto
 						</a>
